@@ -1,8 +1,9 @@
 :root{
     --dourado: #8A6130;
-    --bordo: #390817;
+    --bordo: #530019;
     --escrita: grey;
     --transicaogrey: rgb(122, 70, 70);
+    --footerColor: white;
 }
 body{
     margin: 0;
@@ -23,12 +24,12 @@ ul{
     display: flex;
     gap: 50px;
 }
-a{
+.links_navegacao{
     text-decoration: none;
     color: var(--escrita);
     font-size: 18px;
 }
-a:hover{
+.links_navegacao:hover{
     color: var(--transicaogrey);
     transition: 0.3s;
 }
@@ -36,7 +37,6 @@ a:hover{
     display: flex;
     justify-content: space-between;
     width: 95%;
-    border: 1px blue solid;
 }
 .abertura{
     margin-top: 150px;
@@ -45,11 +45,59 @@ a:hover{
 h4{
     color: var(--dourado);
 }
-h1{
+h1, h2{
     color: var(--bordo);
 }
-p{
+.linksMesmaPagina{
+    text-decoration: none;
+    color: var(--bordo);
+    font-weight: bolder;
+    font-size: 18px;
+}
+a:focus{
+    outline: 31px dashed #ff3c00 !important;
+}
+hr{
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: var(--dourado);
+
+}
+nav{
+    width: 15%;
+    height: 200px;
+    padding: 10px; 
+    border: 1px grey solid;
+    border-radius: 10px;
+}
+.sections{
+    border: 1px grey solid;
+    width: 75%;
+}
+.secoes{
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+    border: 1px blue solid
+}
+.div_selecoes{
+    width: 5%;
+}
+.paragrafos{
     color: var(--escrita);
     margin: 0;
     padding: 0;
+}
+.paragrafo_footer{
+    color: var(--footerColor);
+    margin: 10px;
+    padding-left: 150px ;
+    font-family:'Calibri';
+    font-size: 20px;
+}
+footer{
+    background-color: var(--bordo);
+    margin-top: 200px;
+    display: flex;
 }
