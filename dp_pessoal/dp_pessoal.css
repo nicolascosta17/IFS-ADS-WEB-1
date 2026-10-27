@@ -1,0 +1,55 @@
+:root{
+    --dourado: #8A6130;
+    --bordo: #390817;
+    --escrita: grey;
+    --transicaogrey: rgb(122, 70, 70);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+}
+.logo{
+    padding: 10px;
+    padding-left: 250px;
+}
+ul{
+    list-style: none; 
+    padding-right: 200px;
+    margin-left: auto;
+    align-items:center;
+    display: flex;
+    gap: 50px;
+}
+a{
+    text-decoration: none;
+    color: var(--escrita);
+    font-size: 18px;
+}
+a:hover{
+    color: var(--transicaogrey);
+    transition: 0.3s;
+}
+.negocio{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 1px blue solid;
+}
+.abertura{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+h4{
+    color: var(--dourado);
+}
+h1{
+    color: var(--bordo);
+}
+p{
+    color: var(--escrita);
+    margin: 0;
+    padding: 0;
+}
