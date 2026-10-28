@@ -14,12 +14,21 @@ body {
     min-height: 100vh;
 }
 
-/* 1. TOPO PRINCIPAL (Header de fora a fora) */
+/* 1. TOPO PRINCIPAL */
 .topo-principal {
     background-color: #1a1614;
-    color: #d4af37; /* Detalhe dourado na identidade */
-    padding: 20px 40px;
+    padding: 15px 40px; /* Espaçamento de respiro ao redor */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: flex-start; /* Força o alinhamento total à esquerda */
+    align-items: center; /* Centraliza verticalmente na altura do topo */
+}
+
+/* Container da Logo */
+.logo-container img {
+    height: 50px; /* Define uma altura fixa proporcional para a logo */
+    width: auto;  /* Mantém a proporção original da imagem para não distorcer */
+    display: block;
 }
 
 /* CONTAINER DAS 3 COLUNAS DO MEIO (Usa Flexbox para alinhar lado a lado) */
