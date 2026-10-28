@@ -1,0 +1,205 @@
+/* Reset global básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1614; /* Fundo geral escuro */
+    color: #f2f2f2;            /* Texto claro */
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. TOPO PRINCIPAL (Header de fora a fora) */
+.topo-principal {
+    background-color: #1a1614;
+    color: #d4af37; /* Detalhe dourado na identidade */
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CONTAINER DAS 3 COLUNAS DO MEIO (Usa Flexbox para alinhar lado a lado) */
+.layout-colunas {
+    display: flex;
+    flex: 1; /* Ocupa o espaço vertical disponível */
+    background-color: #1a1614;
+}
+
+/* 2. MENU LATERAL ESQUERDO (<nav>) */
+.menu-lateral {
+    background-color: #241f1d; /* Tom de marrom escuro sutil para a barra lateral */
+    color: #f2f2f2;
+    width: 250px;
+    padding: 30px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.menu-lateral h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #d4af37;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+}
+
+.menu-lateral ul li a:hover, 
+.menu-lateral ul li a.ativo {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* 3. CONTEÚDO CENTRAL (<main>) */
+.conteudo-central {
+    flex: 1; /* Expande ocupando o espaço central */
+    background-color: #1a1614;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artigo-principal {
+    background-color: #241f1d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 1;
+}
+
+.artigo-topo {
+    background-color: #3b0a0a; /* Tom de vinho/bordô elegante do design */
+    color: #f2f2f2;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.conteudo-texto {
+    padding: 30px;
+    flex: 1;
+}
+
+.conteudo-texto h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.conteudo-texto p {
+    color: #cccccc;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Cards internos organizados em linha com Flexbox */
+.cards-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    background-color: #1a1614;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-item h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.card-item p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #b5b5b5;
+}
+
+.card-item a {
+    color: #f2a2a2; /* Tom rosado/avermelhado suave igual ao print do Canva */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.artigo-rodape {
+    background-color: #3b0a0a; /* Rodapé interno em tom de vinho */
+    color: #f2f2f2;
+    padding: 12px 25px;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+}
+
+/* 4. ASIDE LATERAL DIREITA (<aside>) */
+.barra-lateral-direita {
+    background-color: #241f1d;
+    color: #e0e0e0;
+    width: 280px;
+    padding: 30px 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.barra-lateral-direita h3 {
+    color: #d4af37;
+    font-size: 1.1rem;
+}
+
+.barra-lateral-direita p {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.mini-contato {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mini-contato h4 {
+    margin-bottom: 8px;
+    color: #d4af37;
+}
+
+/* 5. RODAPÉ PRINCIPAL (<footer>) */
+.rodape-principal {
+    background-color: #120f0e; /* Tom mais escuro na base */
+    color: #999999;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
