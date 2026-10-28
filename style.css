@@ -1,0 +1,239 @@
+/* Reset global básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1614; /* Fundo geral escuro */
+    color: #f2f2f2;            /* Texto claro */
+    font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. TOPO PRINCIPAL (Header maior com Logo e Menu lado a lado) */
+.topo-principal {
+    background-color: #1a1614;
+    padding: 25px 50px; /* Header mais espaçoso */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, menu na direita */
+    align-items: center;
+}
+
+/* Logo maior */
+.logo-container img {
+    height: 70px; /* Logo aumentada conforme pedido */
+    width: auto;
+    display: block;
+}
+
+/* Menu de navegação no topo */
+.menu-topo ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-topo ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.menu-topo ul li a:hover, 
+.menu-topo ul li a.ativo {
+    color: #d4af37; /* Detalhe dourado */
+    text-decoration: underline;
+}
+
+/* 2. CONTEÚDO CENTRAL (<main> de ponta a ponta, sem colunas nas laterais) */
+.conteudo-central {
+    flex: 1;
+    background-color: #1a1614;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artigo-principal {
+    background-color: #241f1d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.artigo-topo {
+    background-color: #3b0a0a; /* Tom de vinho/bordô elegante */
+    color: #f2f2f2;
+    padding: 18px 30px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.conteudo-texto {
+    padding: 40px;
+}
+
+.conteudo-texto h1 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.conteudo-texto p {
+    color: #cccccc;
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+/* Cards internos organizados lado a lado */
+.cards-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    background-color: #1a1614;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-item h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.card-item p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #b5b5b5;
+}
+
+.card-item a {
+    color: #f2a2a2;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.artigo-rodape {
+    background-color: #3b0a0a;
+    color: #f2f2f2;
+    padding: 15px 30px;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+}
+
+/* 3. RODAPÉ (Footer unificado com texto do aside + Formulário) */
+.rodape-principal {
+    background-color: #120f0e;
+    color: #cccccc;
+    padding: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-family: sans-serif;
+}
+
+.footer-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #aaaaaa;
+}
+
+/* Estilização do Formulário no Rodapé */
+.footer-form-container {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-form-container h3 {
+    color: #d4af37;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-contato input {
+    background-color: #1a1614;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #f2f2f2;
+    font-size: 0.9rem;
+}
+
+.formulario-contato input:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.formulario-contato button {
+    background-color: #3b0a0a;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.formulario-contato button:hover {
+    background-color: #520e0e;
+}
+
+.footer-direitos {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #777777;
+}
