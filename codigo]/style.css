@@ -14,70 +14,49 @@ body {
     min-height: 100vh;
 }
 
-/* 1. TOPO PRINCIPAL */
+/* 1. TOPO PRINCIPAL (Header maior com Logo e Menu lado a lado) */
 .topo-principal {
     background-color: #1a1614;
-    padding: 15px 40px; /* Espaçamento de respiro ao redor */
+    padding: 25px 50px; /* Header mais espaçoso */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: flex-start; /* Força o alinhamento total à esquerda */
-    align-items: center; /* Centraliza verticalmente na altura do topo */
+    justify-content: space-between; /* Logo na esquerda, menu na direita */
+    align-items: center;
 }
 
-/* Container da Logo */
+/* Logo maior */
 .logo-container img {
-    height: 50px; /* Define uma altura fixa proporcional para a logo */
-    width: auto;  /* Mantém a proporção original da imagem para não distorcer */
+    height: 70px; /* Logo aumentada conforme pedido */
+    width: auto;
     display: block;
 }
 
-/* CONTAINER DAS 3 COLUNAS DO MEIO (Usa Flexbox para alinhar lado a lado) */
-.layout-colunas {
-    display: flex;
-    flex: 1; /* Ocupa o espaço vertical disponível */
-    background-color: #1a1614;
-}
-
-/* 2. MENU LATERAL ESQUERDO (<nav>) */
-.menu-lateral {
-    background-color: #241f1d; /* Tom de marrom escuro sutil para a barra lateral */
-    color: #f2f2f2;
-    width: 250px;
-    padding: 30px 20px;
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.menu-lateral h3 {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #d4af37;
-}
-
-.menu-lateral ul {
+/* Menu de navegação no topo */
+.menu-topo ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
-.menu-lateral ul li a {
+.menu-topo ul li a {
     text-decoration: none;
     color: #e0e0e0;
     font-family: sans-serif;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    transition: color 0.2s;
 }
 
-.menu-lateral ul li a:hover, 
-.menu-lateral ul li a.ativo {
-    color: #d4af37;
+.menu-topo ul li a:hover, 
+.menu-topo ul li a.ativo {
+    color: #d4af37; /* Detalhe dourado */
     text-decoration: underline;
 }
 
-/* 3. CONTEÚDO CENTRAL (<main>) */
+/* 2. CONTEÚDO CENTRAL (<main> de ponta a ponta, sem colunas nas laterais) */
 .conteudo-central {
-    flex: 1; /* Expande ocupando o espaço central */
+    flex: 1;
     background-color: #1a1614;
-    padding: 30px;
+    padding: 40px 50px;
     display: flex;
     flex-direction: column;
 }
@@ -85,27 +64,28 @@ body {
 .artigo-principal {
     background-color: #241f1d;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 6px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    flex: 1;
+    width: 100%;
 }
 
 .artigo-topo {
-    background-color: #3b0a0a; /* Tom de vinho/bordô elegante do design */
+    background-color: #3b0a0a; /* Tom de vinho/bordô elegante */
     color: #f2f2f2;
-    padding: 15px 25px;
+    padding: 18px 30px;
     font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
 }
 
 .conteudo-texto {
-    padding: 30px;
-    flex: 1;
+    padding: 40px;
 }
 
 .conteudo-texto h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 15px;
     font-weight: normal;
 }
@@ -115,22 +95,23 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     margin-bottom: 30px;
+    font-size: 1.05rem;
 }
 
-/* Cards internos organizados em linha com Flexbox */
+/* Cards internos organizados lado a lado */
 .cards-grid {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
 .card-item {
     background-color: #1a1614;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 25px;
+    padding: 30px;
     border-radius: 6px;
     flex: 1;
-    min-width: 220px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,19 +119,19 @@ body {
 
 .card-item h3 {
     color: #d4af37;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
 }
 
 .card-item p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-bottom: 20px;
     font-family: sans-serif;
     color: #b5b5b5;
 }
 
 .card-item a {
-    color: #f2a2a2; /* Tom rosado/avermelhado suave igual ao print do Canva */
+    color: #f2a2a2;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 0.9rem;
@@ -158,57 +139,101 @@ body {
 }
 
 .artigo-rodape {
-    background-color: #3b0a0a; /* Rodapé interno em tom de vinho */
+    background-color: #3b0a0a;
     color: #f2f2f2;
-    padding: 12px 25px;
+    padding: 15px 30px;
     font-family: sans-serif;
     font-size: 0.85rem;
 }
 
-/* 4. ASIDE LATERAL DIREITA (<aside>) */
-.barra-lateral-direita {
-    background-color: #241f1d;
-    color: #e0e0e0;
-    width: 280px;
-    padding: 30px 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
+/* 3. RODAPÉ (Footer unificado com texto do aside + Formulário) */
+.rodape-principal {
+    background-color: #120f0e;
+    color: #cccccc;
+    padding: 40px 50px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-family: sans-serif;
 }
 
-.barra-lateral-direita h3 {
+.footer-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3 {
     color: #d4af37;
+    margin-bottom: 12px;
     font-size: 1.1rem;
 }
 
-.barra-lateral-direita p {
-    font-family: sans-serif;
+.footer-info p {
     font-size: 0.9rem;
-    color: #cccccc;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: #aaaaaa;
 }
 
-.mini-contato {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 15px;
+/* Estilização do Formulário no Rodapé */
+.footer-form-container {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 20px;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.mini-contato h4 {
-    margin-bottom: 8px;
+.footer-form-container h3 {
     color: #d4af37;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
 }
 
-/* 5. RODAPÉ PRINCIPAL (<footer>) */
-.rodape-principal {
-    background-color: #120f0e; /* Tom mais escuro na base */
-    color: #999999;
-    padding: 20px 40px;
+.formulario-contato {
     display: flex;
-    justify-content: space-between;
-    font-family: sans-serif;
-    font-size: 0.85rem;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-contato input {
+    background-color: #1a1614;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #f2f2f2;
+    font-size: 0.9rem;
+}
+
+.formulario-contato input:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.formulario-contato button {
+    background-color: #3b0a0a;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.formulario-contato button:hover {
+    background-color: #520e0e;
+}
+
+.footer-direitos {
+    width: 100%;
+    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #777777;
 }
