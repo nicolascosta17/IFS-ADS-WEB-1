@@ -13,18 +13,14 @@ body{
 }
 header{
     display: flex;
-}
-.logo{
-    padding: 10px;
-    padding-left: 250px;
+    justify-content: space-around;
+    gap: 500px;
 }
 .lista{
-    list-style: none; 
-    padding-right: 200px;
-    margin-left: auto;
+    list-style: none;
     align-items:center;
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 .links_navegacao{
     text-decoration: none;
@@ -35,15 +31,47 @@ header{
     color: var(--transicaogrey);
     transition: 0.3s;
 }
+.section_apresentacao{
+    background-color: var(--fundoSection);
+}
 .negocio{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     width: 95%;
 }
 .abertura{
-    margin-top: 250px;
-    margin-left: 200px;
+    align-content: center;
 }
+.secoes{
+    background-color: var(--fundoTutoriais);
+    display: flex;
+    justify-content:space-around;
+}
+.navegacao{
+    width: 200px;
+    justify-items: center;
+    height: 300px;  
+    border: 1px rgb(206, 206, 206) solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.sections{
+    width: 900px;
+}
+.paragrafos{
+    color: var(--escrita);
+    margin: 0;
+    padding: 0;
+}
+.container-footer{
+    justify-content: space-around;
+}
+.paragrafo_footer{
+    color: var(--footerColor);
+    font-family:'Calibri';
+    font-size: 20px;
+}
+
 h4{
     color: var(--dourado);
 }
@@ -64,51 +92,12 @@ hr{
     background-color: var(--dourado);
 
 }
-.navegacao{
-    width: auto;
-    height: auto;  
-    padding: 10px; 
-    border: 1px rgb(206, 206, 206) solid;
-    border-radius: 10px;
-    background-color: white;
-}
-.section_apresentacao{
-    background-color: var(--fundoSection);
-}
-.sections{
-    width: 900px;
-    padding-right: 30px;
-}
-.secoes{
-    background-color: var(--fundoTutoriais);
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:space-around;
-}
 a {
   width: 200px;          
   text-align: center;    
 }
-.div_selecoes{
-    padding: 10px;
-    width: fit-content;
-}
-.paragrafos{
-    color: var(--escrita);
-    margin: 0;
-    padding: 0;
-}
-.paragrafo_footer{
-    color: var(--footerColor);
-    margin: 10px;
-    padding-left: 150px ;
-    font-family:'Calibri';
-    font-size: 20px;
-}
+
 footer{
     background-color: var(--bordo);
-    margin-top: 200px;
     display: flex;
 }
