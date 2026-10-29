@@ -91,9 +91,6 @@ a {
   width: 200px;          
   text-align: center;    
 }
-a:focus{
-    outline: 31px dashed #ff3c00 !important;
-}
 .div_selecoes{
     padding: 10px;
     width: fit-content;
