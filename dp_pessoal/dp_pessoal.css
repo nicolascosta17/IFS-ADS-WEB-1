@@ -4,6 +4,8 @@
     --escrita: grey;
     --transicaogrey: rgb(122, 70, 70);
     --footerColor: white;
+    --fundoSection: #f4e9e7;
+    --fundoTutoriais: #f8f8f8;
 }
 body{
     margin: 0;
@@ -16,7 +18,7 @@ header{
     padding: 10px;
     padding-left: 250px;
 }
-ul{
+.lista{
     list-style: none; 
     padding-right: 200px;
     margin-left: auto;
@@ -54,35 +56,47 @@ h1, h2{
     font-weight: bolder;
     font-size: 18px;
 }
-a:focus{
-    outline: 31px dashed #ff3c00 !important;
-}
 hr{
     margin: 0;
     border: none;
+    width: auto;
     height: 1px;
     background-color: var(--dourado);
 
 }
-nav{
-    width: 15%;
-    height: 200px;
+.navegacao{
+    width: auto;
+    height: auto;  
     padding: 10px; 
-    border: 1px grey solid;
+    border: 1px rgb(206, 206, 206) solid;
     border-radius: 10px;
+    background-color: white;
+}
+.section_apresentacao{
+    background-color: var(--fundoSection);
 }
 .sections{
-    border: 1px grey solid;
-    width: 75%;
+    width: 900px;
+    padding-right: 30px;
 }
 .secoes{
-    gap: 100px;
+    background-color: var(--fundoTutoriais);
+    gap: 0;
     margin: 0;
     padding: 0;
-    border: 1px blue solid
+    display: flex;
+    justify-content:space-around;
+}
+a {
+  width: 200px;          
+  text-align: center;    
+}
+a:focus{
+    outline: 31px dashed #ff3c00 !important;
 }
 .div_selecoes{
-    width: 5%;
+    padding: 10px;
+    width: fit-content;
 }
 .paragrafos{
     color: var(--escrita);
