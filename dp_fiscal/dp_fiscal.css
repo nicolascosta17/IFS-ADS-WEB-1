@@ -4,7 +4,7 @@
     --escrita: grey;
     --transicaogrey: rgb(122, 70, 70);
     --footerColor: white;
-    --fundoSection: #f4e9e7;
+    --fundoSection: #ffd9e4;
     --fundoTutoriais: #f8f8f8;
 }
 body{
@@ -41,8 +41,8 @@ header{
     width: 95%;
 }
 .abertura{
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 250px;
+    margin-left: 200px;
 }
 h4{
     color: var(--dourado);
