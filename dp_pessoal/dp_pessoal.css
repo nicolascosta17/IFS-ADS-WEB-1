@@ -44,6 +44,17 @@ header{
     margin-top: 150px;
     margin-left: 100px;
 }
+.listaFooter{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: right;
+    padding-top: 30px;
+    padding-left: 900px;
+    margin: 0;
+    gap: 10px;
+    text-decoration: none;
+}
 h4{
     color: var(--dourado);
 }
