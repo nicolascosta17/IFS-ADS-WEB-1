@@ -17,10 +17,9 @@ body {
 /* 1. TOPO PRINCIPAL (Header maior com Logo e Menu lado a lado) */
 .topo-principal {
     background-color: #1a1614;
-    padding: 25px 50px; /* Header mais espaçoso */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-between; /* Logo na esquerda, menu na direita */
+    justify-content: space-around; /* Logo na esquerda, menu na direita */
     align-items: center;
 }
 
@@ -35,7 +34,7 @@ body {
 .menu-topo ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    column-gap: 15px;
 }
 
 .menu-topo ul li a {
@@ -49,16 +48,15 @@ body {
 .menu-topo ul li a:hover, 
 .menu-topo ul li a.ativo {
     color: #d4af37; /* Detalhe dourado */
-    text-decoration: underline;
 }
 
 /* 2. CONTEÚDO CENTRAL (<main> de ponta a ponta, sem colunas nas laterais) */
 .conteudo-central {
     flex: 1;
     background-color: #1a1614;
-    padding: 40px 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .artigo-principal {
@@ -68,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
 }
 
 .artigo-topo {
