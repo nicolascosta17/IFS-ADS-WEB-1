@@ -1,36 +1,32 @@
-/* Reset global básico */
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #1a1614; /* Fundo geral escuro */
-    color: #f2f2f2;            /* Texto claro */
+    background-color: #1a1614;
+    color: #f2f2f2;
     font-family: 'Georgia', serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* 1. TOPO PRINCIPAL (Header maior com Logo e Menu lado a lado) */
 .topo-principal {
     background-color: #1a1614;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-around; /* Logo na esquerda, menu na direita */
+    justify-content: space-around;
     align-items: center;
+    min-height: 90px;
 }
 
-/* Logo maior */
 .logo-container img {
-    height: 70px; /* Logo aumentada conforme pedido */
+    height: 70px;
     width: auto;
     display: block;
 }
 
-/* Menu de navegação no topo */
 .menu-topo ul {
     list-style: none;
     display: flex;
@@ -45,12 +41,11 @@ body {
     transition: color 0.2s;
 }
 
-.menu-topo ul li a:hover, 
+.menu-topo ul li a:hover,
 .menu-topo ul li a.ativo {
-    color: #d4af37; /* Detalhe dourado */
+    color: #d4af37;
 }
 
-/* 2. CONTEÚDO CENTRAL (<main> de ponta a ponta, sem colunas nas laterais) */
 .conteudo-central {
     flex: 1;
     background-color: #1a1614;
@@ -70,21 +65,29 @@ body {
 }
 
 .artigo-topo {
-    background-color: #3b0a0a; /* Tom de vinho/bordô elegante */
+    background-color: #3b0a0a;
     color: #f2f2f2;
-    padding: 18px 30px;
+    width: auto;
+    text-align: center;
+    align-content: center;
+    height: 50px;
     font-weight: bold;
     font-size: 0.95rem;
     letter-spacing: 1px;
 }
 
 .conteudo-texto {
-    padding: 40px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
 }
 
 .conteudo-texto h1 {
     font-size: 2.3rem;
-    margin-bottom: 15px;
     font-weight: normal;
 }
 
@@ -92,38 +95,37 @@ body {
     color: #cccccc;
     font-family: sans-serif;
     line-height: 1.6;
-    margin-bottom: 30px;
     font-size: 1.05rem;
 }
 
-/* Cards internos organizados lado a lado */
 .cards-grid {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 .card-item {
     background-color: #1a1614;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 30px;
+    text-align: center;
+    min-height: 150px;
     border-radius: 6px;
     flex: 1;
-    min-width: 250px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
 }
 
 .card-item h3 {
     color: #d4af37;
-    margin-bottom: 12px;
     font-size: 1.2rem;
 }
 
 .card-item p {
     font-size: 0.95rem;
-    margin-bottom: 20px;
     font-family: sans-serif;
     color: #b5b5b5;
 }
@@ -139,19 +141,22 @@ body {
 .artigo-rodape {
     background-color: #3b0a0a;
     color: #f2f2f2;
-    padding: 15px 30px;
+    text-align: center;
+    align-content: center;
+    height: 50px;
     font-family: sans-serif;
     font-size: 0.85rem;
 }
 
-/* 3. RODAPÉ (Footer unificado com texto do aside + Formulário) */
 .rodape-principal {
     background-color: #120f0e;
     color: #cccccc;
-    padding: 40px 50px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     gap: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -161,11 +166,14 @@ body {
 .footer-info {
     flex: 1;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 .footer-info h3 {
     color: #d4af37;
-    margin-bottom: 12px;
     font-size: 1.1rem;
 }
 
@@ -175,19 +183,21 @@ body {
     color: #aaaaaa;
 }
 
-/* Estilização do Formulário no Rodapé */
 .footer-form-container {
     flex: 1;
     min-width: 280px;
     background-color: rgba(255, 255, 255, 0.02);
-    padding: 20px;
+    min-height: 220px;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
 }
 
 .footer-form-container h3 {
     color: #d4af37;
-    margin-bottom: 12px;
     font-size: 1.1rem;
 }
 
@@ -195,15 +205,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 90%;
+    align-self: center;
 }
 
 .formulario-contato input {
     background-color: #1a1614;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 10px 15px;
+    min-height: 38px;
     border-radius: 4px;
     color: #f2f2f2;
     font-size: 0.9rem;
+    text-indent: 15px;
 }
 
 .formulario-contato input:focus {
@@ -215,7 +228,7 @@ body {
     background-color: #3b0a0a;
     color: #f2f2f2;
     border: none;
-    padding: 10px;
+    min-height: 38px;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -231,7 +244,8 @@ body {
     width: 100%;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 20px;
+    min-height: 50px;
+    align-content: center;
     font-size: 0.8rem;
     color: #777777;
 }
