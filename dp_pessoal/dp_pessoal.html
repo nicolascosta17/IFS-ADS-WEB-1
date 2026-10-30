@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../midia/logo_contidados.png" height="75px" width="75px">
+        <div>
+            <a href="../index.html">
+                <img src="../midia/logo_contidados.png" height="75px" width="75px">
+            </a>
         </div>
-        <ul>
-            <li><a href="" class="links_navegacao">Início</a></li>
+        <ul class="lista">
+            <li><a href="../index.html" class="links_navegacao">Início</a></li>
             <li><a href="../dp_fiscal/dp_fiscal.html" class="links_navegacao">Departamento Fiscal</a></li>
         </ul>        
     </header>
-    <section>
+    <section class="section_apresentacao">
         <div class="negocio">
             <div class="abertura">
                 <h4>GUIA DE ROTINAS</h4>
@@ -28,38 +30,85 @@
             <img src="../midia/negocio.jpg" height="500px" width="700px">
         </div>
     </section>
-    <div>
 
-    </div>
+    <br>
+    <br>
 
     <div class="secoes">
-        <div>
-            <nav>
-                <h2>Nesta página</h2>
-                <br>
-                <div class="div_selecoes">
-                    <a href="#admissao" class="linksMesmaPagina">Admissão</a>
-                    <hr>
-                </div>
-            </nav>
-        </div>
+        <nav class="navegacao">
+            <h2>Nesta página</h2>
+            <div>
+                <a href="#admissao" class="linksMesmaPagina">Admissão</a>
+                <hr>
+            </div>
+            <br>
+            <div>
+                <a href="#cargo" class="linksMesmaPagina">Cargo</a>
+                <hr>
+            </div>
+            <br>
+            <div>
+                <a href="#horario" class="linksMesmaPagina">Horário</a>
+                <hr>
+            </div>
+            <br>
+            <div>
+                <a href="#jornada" class="linksMesmaPagina">Jornada</a>
+                <hr>
+            </div>
+        </nav>
         <div>
             <section id="admissao" class="sections">
-                <h2>Admissão de Funcionário</h2>
-                <p class="paragrafos">Uma admissão</p>
-                <p class="paragrafos"></p>
+                <h1>Admissão de Funcionário</h1>
+                <p class="paragrafos">Quais documentos são necessários para eu realizar a admissão de um funcionário?</p>
+                <p class="paragrafos">É isso que vamos aprender nesse bloco</p>
+                <img src="../midia/negocio.jpg" height="300" width="550" style="border-radius: 20px;">
+                <ul>
+                    <li><h2>DOCUMENTAÇÃO</h2></li>
+                    <li><p class="paragrafos">-CPF</p></li>
+                    <li><p class="paragrafos">-RG(Documentação)</p></li>
+                    <li><p class="paragrafos">-Comprovante de Residência/p></li>
+                    <li><p class="paragrafos">-CTPS (Carteira Digita de Trabalho)</p></li>
+                    <li><p class="paragrafos">-Exame Admissional</p></li>
+                    <li><h2>Informações Contratuais:</h2></li>
+                    <li><p class="paragrafos">Cargo</p></li>
+                    <li><p class="paragrafos">Salário</p></li>
+                    <li><p class="paragrafos">Horário</p></li>
+                    <li><p class="paragrafos">Terá Benefício?</p></li>
+                </ul>
+            </section>
+            <section id="cargo">
+                <h1>Cargo</h1>
+                <p class="paragrafos">Como cadastrar Cargo? </p>
+                <p class="paragrafos">É isso que vamos aprender nesse bloco</p>
+                <video src="../midia/cargos.mp4" height="500" width="600" controls poster="../midia/logo.png"></video>
+                <p>Obrigado por assistir!</p>
+            </section>
+            <section id="horario">
+                <h1>Horário</h1>
+                <p class="paragrafos">Como cadastrar horário da empresa?</p>
+                <p class="paragrafos">É isso que vamos aprender nesse bloco</p>
+                <video src="../midia/horario.mp4" height="500" width="600" controls poster="../midia/logo.png"></video>
+                <p>Obrigado por assistir!</p>
+            </section>
+            <section id="jornada"> 
+                <h1>Jornada</h1>
+                <p class="paragrafos">Como cadastrar Jornada em uma empresa?</p>
+                <p class="paragrafos">É isso que vamos aprender nesse bloco</p>
+                <video src="../midia/jornada.mp4" height="500" width="600" controls poster="../midia/logo.png"></video>
+                <p>Obrigado por assistir!</p>
             </section>
         </div>
-    </div>
-
-    <footer>
+    </div>  
+    <br><br>
+    <footer class="container-footer">
         <div>
             <p class="paragrafo_footer">Contidados Contabilidade & Assesoria</p>
             <p class="paragrafo_footer">Informação para caminhar com confiança</p>
         </div>
-            <ul>
-                <li><a href=""  style="color: white; text-decoration: underline;">Início</a></li>
-                <li><a href="../dp_fiscal/dp_fiscal.html"  style="color: white; text-decoration: underline;">Departamento Fiscal</a></li>
+            <ul class="lista">
+                <li><a href="../index.html" class="links_navegacao"  style="color: white;">Início</a></li>
+                <li><a href="../dp_fiscal/dp_fiscal.html" class="links_navegacao"  style="color: white;">Departamento Fiscal</a></li>
             </ul>
     </footer>
 </body>

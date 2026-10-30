@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dep Pessoal</title>
     <link rel="stylesheet" href="dp_fiscal.css">
+    <link rel="icon" type="image/png" href="../midia/logo_contidados.png">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../midia/logo_contidados.png" height="75px" width="75px">
+            </a>
+        </div>
+        <ul class="lista">
+            <li><a href="../index.html" class="links_navegacao">Início</a></li>
+            <li><a href="../dp_pessoal/dp_pessoal.html" class="links_navegacao">Departamento Pessoal</a></li>
+        </ul>        
+    </header>
+    <section class="section_apresentacao">
+        <div class="negocio">
+            <div class="abertura">
+                <h4>GUIA DE ROTINAS</h4>
+                <h1>Departamento Fiscal</h1>
+                <p class="paragrafos">Conheça etapas comuns de organização de informações trabalhistas</p>
+                <p class="paragrafos">e use a navegação interna para consultar cada seção do guia.</p>
+            </div>
+            <img src="../midia/chefe.jpg" height="800px" width="700px">
+        </div>
+    </section>
+
+    <br><br>
+
+    <div class="secoes">
+        <div>
+            <nav class="navegacao">
+                <h2>Nesta página</h2>
+                <div>
+                    <a href="#nota" class="linksMesmaPagina">Nota Fiscal</a>
+                    <hr>
+                </div>
+                <br>
+                <div>
+                    <a href="#faturamento" class="linksMesmaPagina">Faturamento</a>
+                    <hr>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <section id="nota" class="sections">
+                <h2>Nota Fiscal</h2>
+                <p class="paragrafos">Como emitir uma nota fiscal?</p>
+                <p class="paragrafos">É isso que vamos aprender nesse bloco</p>
+                <video src="../midia/nota_fiscal.mp4" height="500" width="600" controls poster="../midia/logo.png"></video>
+                <p>Obrigado por assistir!</p>
+            </section>
+            <section id="faturamento">
+                <h2>Faturamento</h2>
+                <p>Como lançar um faturamento mensal? </p>
+                <p>É isso que vamos aprender nesse bloco</p>
+                <img src="../midia/planejando.jpg" height="300" width="400" style="border-radius: 15px;">
+                <ul>
+                    <h2>Importação XML</h2>
+                    <li><p>No navegador</p></li>
+                    <li><p>Pesquise Nota Fiscal Portal Nacional e entre no primeiro link</p></li>
+                    <li><p>Vá em NFS-e Emitidas</p></li>
+                    <li><p>Coloque a Competência desejada</p></li>
+                    <li><p>Faça o Dowload do XML das notas emitidas com a competência desejada e as coloque em uma pasta</p></li>
+                    <h2>Domínio</h2>
+                    <li><h3>Utilitário</h3></li>
+                    <li><p>Importação</p></li>
+                    <li><p>Importação Padrão</p></li>
+                    <li><p>NFS-e Arquivo XML - Padrão Nacional</p></li>
+                    <li><p>Reticências</p></li>
+                    <li><p>Coloque o caminho da pasta em que está os XML</p></li>
+                    <li><p>Selecione Todos os XML</p></li>
+                    <li><p>OK</p></li>
+                    <li><p>Importar</p></li>
+                    <li><p>GRAVAR</p></li>
+                    <li><p>Importar e gravar novamente para confirmar</p></li>
+
+                    <li><h3>Relatórios</h3></li>
+                    <li><p>Acompanhamentos</p></li>
+                    <li><p>Serviços</p></li>
+                    <li><p>Competência</p></li>
+                    <li><p>OK</p></li>
+                    <li><p>Imprimir</p></li>
+                    
+                </ul>
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <footer class="container-footer">
+        <div>
+            <p class="paragrafo_footer">Contidados Contabilidade & Assesoria</p>
+            <p class="paragrafo_footer">Informação para caminhar com confiança</p>
+        </div>
+            <ul class="lista">
+                <li><a href="../index.html" class="links_navegacao"  style="color: white;">Início</a></li>
+                <li><a href="../dp_pessoal/dp_pessoal.html" class="links_navegacao"  style="color: white;">Departamento Pessoal</a></li>
+            </ul>
+    </footer>
 </body>
 </html>

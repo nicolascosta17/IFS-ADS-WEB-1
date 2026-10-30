@@ -1,0 +1,103 @@
+:root{
+    --dourado: #8A6130;
+    --bordo: #530019;
+    --escrita: grey;
+    --transicaogrey: rgb(122, 70, 70);
+    --footerColor: white;
+    --fundoSection: #ffd9e4;
+    --fundoTutoriais: #f8f8f8;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 500px;
+}
+.lista{
+    list-style: none;
+    align-items:center;
+    display: flex;
+    gap: 20px;
+}
+.links_navegacao{
+    text-decoration: none;
+    color: var(--escrita);
+    font-size: 18px;
+}
+.links_navegacao:hover{
+    color: var(--transicaogrey);
+    transition: 0.3s;
+}
+.section_apresentacao{
+    background-color: var(--fundoSection);
+}
+.negocio{
+    display: flex;
+    justify-content:space-around;
+    width: 95%;
+}
+.abertura{
+    align-content: center;
+}
+.secoes{
+    background-color: var(--fundoTutoriais);
+    display: flex;
+    justify-content:space-around;
+}
+.navegacao{
+    width: 200px;
+    justify-items: center;
+    height: 300px;  
+    border: 1px rgb(206, 206, 206) solid;
+    border-radius: 10px;
+    background-color: white;
+}
+.sections{
+    width: 900px;
+}
+.paragrafos{
+    color: var(--escrita);
+    margin: 0;
+    padding: 0;
+}
+.container-footer{
+    justify-content: space-around;
+}
+.paragrafo_footer{
+    color: var(--footerColor);
+    font-family:'Calibri';
+    font-size: 20px;
+}
+
+h4{
+    color: var(--dourado);
+}
+h1, h2{
+    color: var(--bordo);
+}
+.linksMesmaPagina{
+    text-decoration: none;
+    color: var(--bordo);
+    font-weight: bolder;
+    font-size: 18px;
+}
+hr{
+    margin: 0;
+    border: none;
+    width: auto;
+    height: 1px;
+    background-color: var(--dourado);
+
+}
+a {
+  width: 200px;          
+  text-align: center;    
+}
+
+footer{
+    background-color: var(--bordo);
+    display: flex;
+}
